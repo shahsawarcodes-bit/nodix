@@ -1,0 +1,17 @@
+packages:
+  - "apps/*"
+  - "servers/*"
+  - "packages/*"
+  - "prebuilt/*"
+  - "prebuilt/*/*"
+
+allowBuilds:
+  esbuild: true
+  leveldown: true
+  unrs-resolver: true
+
+audit:
+  level: high
+
+overrides:
+  yjs: "^13.6.33"

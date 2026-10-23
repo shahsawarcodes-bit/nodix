@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" fill="none">
+  <!-- Icon Mark -->
+  <g transform="translate(2, 2) scale(0.46)">
+    <line x1="25" y1="26" x2="75" y2="74" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <line x1="25" y1="74" x2="25" y2="40" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <line x1="75" y1="26" x2="75" y2="60" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="25" cy="26" r="8.5" fill="currentColor"/>
+    <circle cx="25" cy="74" r="8.5" fill="currentColor"/>
+    <circle cx="75" cy="26" r="8.5" fill="currentColor"/>
+    <circle cx="75" cy="74" r="8.5" fill="currentColor"/>
+  </g>
+  <!-- Text: Nodix -->
+  <text x="56" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="currentColor" letter-spacing="-0.5">Nodix</text>
+</svg>

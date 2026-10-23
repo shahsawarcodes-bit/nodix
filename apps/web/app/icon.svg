@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Diagonal line from top-left node to bottom-right node -->
+  <line x1="25" y1="26" x2="75" y2="74" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+  <!-- Left vertical line from bottom-left node going up -->
+  <line x1="25" y1="74" x2="25" y2="40" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+  <!-- Right vertical line from top-right node going down -->
+  <line x1="75" y1="26" x2="75" y2="60" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+  <!-- 4 circular nodes -->
+  <circle cx="25" cy="26" r="8.5" fill="currentColor"/>
+  <circle cx="25" cy="74" r="8.5" fill="currentColor"/>
+  <circle cx="75" cy="26" r="8.5" fill="currentColor"/>
+  <circle cx="75" cy="74" r="8.5" fill="currentColor"/>
+</svg>

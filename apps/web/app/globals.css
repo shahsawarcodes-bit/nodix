@@ -1,0 +1,74 @@
+@import "@workspace/ui/styles.css";
+
+@source "../**/*.{ts,tsx}";
+@source "../../../packages/ui/src/**/*.{ts,tsx}";
+
+[data-placeholder]:empty::before,
+[data-placeholder][data-empty="true"]::before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+  pointer-events: none;
+  float: left;
+  height: 0;
+}
+
+/* ─── Landing Page: Animated Cursor Floats ─────────────────────────── */
+@keyframes cursor-sarah {
+  0%, 100% { transform: translate(0px, 0px) rotate(-3deg); }
+  15%       { transform: translate(22px, -18px) rotate(-1deg); }
+  35%       { transform: translate(40px, -2px) rotate(2deg); }
+  55%       { transform: translate(28px, 18px) rotate(1deg); }
+  75%       { transform: translate(8px, 10px) rotate(-2deg); }
+}
+
+@keyframes cursor-marcus {
+  0%, 100% { transform: translate(0px, 0px) rotate(2deg); }
+  20%       { transform: translate(-28px, 12px) rotate(0deg); }
+  40%       { transform: translate(-42px, -8px) rotate(-2deg); }
+  65%       { transform: translate(-22px, -22px) rotate(1deg); }
+  85%       { transform: translate(-5px, -8px) rotate(3deg); }
+}
+
+/* ─── Landing Page: Fade In Up ─────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes shimmer-slide {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.anim-cursor-sarah {
+  animation: cursor-sarah 11s ease-in-out infinite;
+}
+
+.anim-cursor-marcus {
+  animation: cursor-marcus 13s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+.anim-fade-in-up {
+  animation: fadeInUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.anim-fade-in-up-1 { animation: fadeInUp 0.65s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.anim-fade-in-up-2 { animation: fadeInUp 0.65s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.anim-fade-in-up-3 { animation: fadeInUp 0.65s 0.32s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.anim-fade-in-up-4 { animation: fadeInUp 0.65s 0.44s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+/* ─── Dashboard: Sidebar hover scale ─────────────────────────────── */
+.sidebar-item-hover {
+  transition: transform 0.12s ease, background-color 0.12s ease, box-shadow 0.12s ease;
+  transform-origin: left center;
+}
+
+.sidebar-item-hover:hover {
+  transform: scale(1.016) translateX(1px);
+}
